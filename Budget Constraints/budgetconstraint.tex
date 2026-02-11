@@ -1,0 +1,160 @@
+\section{Budget Constraint}
+
+
+\subsection{Assumptions}
+\begin{frame}{Assumptions}
+    \begin{itemize}
+        \item Consider a simple 2-good economy model.
+        \item Suppose that a consumer has income \(M\) to spend on goods 1 and 2.
+        \item Let \((x_1, x_2)\) be the amount that the consumer chooses of goods 1 and
+        2 respectively. This will be called the consumer's \textbf{consumption bundle}.
+        \item Let \(p_1\) and \(p_2\) be the prices of goods 1 and 2 respectively.
+        \item Then, our consumer can afford all bundles \((x_1, x_2)\) such that:
+        \[p_1 x_1 + p_2 x_2 \leq M\]
+        \item This is what we'll call the consumer's \textbf{budget constraint}.
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Reality}
+    One might believe that the 2-good economy model is unrealistic. In fact, it is.
+    
+    However, suppose that we are interested in studying a consumer's demand for
+    milk. We might let \(x_1\) measure his or her consumption of milk in quarts per
+    month.
+    
+    We can then let \(x_2\) stand for everything else the consumer might want to consume.
+
+    We say that good 2 represents a \emph{composite good} that stands for everything else
+    that the consumer might want to consume other than good 1.
+
+    When we adopt this interpretation, two goods are enough.
+\end{frame}
+
+
+\subsection{Budget Set}
+\begin{frame}{Budget Set and Budget Line}
+    \dfn{The \textbf{budget set} is the set of consumption bundles which the consumer can afford:
+    \[ \{ (x_1, x_2) : p_1 x_1 + p_2 x_2 \leq M, x_1 \geq 0, x_2 \geq 0\} \]}
+
+    \dfn{The set of consumption bundles that exhaust the income of the consumer form the \textbf{budget line}:
+    \[ \{ (x_1, x_2) : p_1 x_1 + p_2 x_2 = M, x_1 \geq 0, x_2 \geq 0\} \]}
+\end{frame}
+
+
+\begin{frame}{Budget Set Graphically}
+    \begin{center}
+        \includegraphics[scale=1]{BC1}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{Slope and Intercepts of Budget Line}
+    The budget line is:
+    \[p_1 x_1 + p_2 x_2 = M\]
+
+    In slope-intercept form with \(x_2\) on the y-axis, the budget line is:
+    \[x_2 = \frac{M}{p_2} - \frac{p_1}{p_2} x_1 \quad (p_2 \not= 0)\]
+
+    Hence, the slope of the budget line is:
+    \[-\frac{p_1}{p_2}\]
+
+    Then, the intercepts are:
+    \[\text{y-intercept} = \frac{M}{p_2} \quad \text{and} \quad \text{x-intercept} = \frac{M}{p_1}\]
+\end{frame}
+
+
+\begin{frame}{Budget Line and Opportunity Cost}
+    Choosing between bundles on the budget line requires a tradeoff.
+
+    Economists sometimes say that the slope of the budget line measures
+    the \textbf{opportunity cost} of consuming good 1. In order to consume more of
+    good 1 you have to give up some consumption of good 2.
+    
+    Giving up the opportunity to consume good 2 is the true economic cost of more good 1
+    consumption; and that cost is measured by the slope of the budget line.
+\end{frame}
+
+
+\subsection{Example 1}
+
+\begin{frame}{Example 1}
+    \begin{itemize}
+        \item Suppose that I go to Starbucks with \$10 to spend on cookies and coffee.
+        \item Assume that the price of cookies is \$1 and the price of coffee is \$2.
+        \item Then, my budget constraint is:
+        \[x_1 + 2x_2 \leq 10\]
+        \item I can, therefore, afford all consumption bundles that cost less than \$10.
+        Put simply, I can buy any combination of cookies and coffee under \$10.
+        \item I can afford all bundles that satisfy this inequality.
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Example 1}
+    \begin{itemize}
+        \item Suppose that I spend all of my money on cookies (\(x_1\)). I can then buy 10 cookies.
+        \item Suppose that I spend all of my money on coffee (\(x_2\)). I can then buy 5 cups of coffee.
+        \item These correspond to the intercept bundles \((0,5)\) and (\(10,0\)).
+        \item Other affordable bundles on my budget line are:
+        \[(2,4), (4,3), (6,2), (8,1)\]
+        \item In this case, the goods are not divisible; they are discrete.
+        However, we will usually assume that goods are infinitely divisible for convenience.
+    \end{itemize}
+\end{frame}
+
+
+\subsection{Example 2}
+
+\begin{frame}{Example 2}
+    Suppose I have \$20. The price of coffee (\(p_2\)) at Starbucks is \$3, and the price
+    of cookies (\(p_1\)) depends on whether I buy more or less than 10:
+    \[p_1 =
+    \begin{cases}
+        \$1 \quad \text{when} \quad x_1 \leq 10, \\
+        \$3 \quad \text{when} \quad x_1 > 10.
+    \end{cases}\]
+
+    What will my budget constraint and budget line look like?
+\end{frame}
+
+
+\begin{frame}{Example 2's Solution}
+    \[\text{Budget Constraint} =
+    \begin{cases}
+        x_1 + 3x_2 \leq 20 \quad \text{when} \quad x_1 \leq 10, \\
+        3x_1 + 3x_2 \leq 20 \quad \text{when} \quad x_1 > 10.
+    \end{cases}\]
+
+    \begin{center}
+    \begin{tikzpicture}[scale=0.5]
+    % Axes
+    \draw[->] (0,0) -- (15,0) node[right] {$x_1$ (cookies)};
+    \draw[->] (0,0) -- (0,8) node[above] {$x_2$ (coffee)};
+
+    % Budget line segments
+    % Segment 1: x1 <= 10
+    \draw[thick, blue]
+    (0, {20/3}) -- (10, {10/3});
+
+    % Segment 2: x1 > 10
+    \draw[thick, blue]
+    (10, {10/3}) -- ({40/3}, 0);
+
+    % Kink point
+    \filldraw[black] (10, {10/3}) circle (2pt)
+    node[above right] {$\left(10,\tfrac{10}{3}\right)$};
+
+    % Intercepts
+    \filldraw[black] (0, {20/3}) circle (2pt)
+    node[left] {$\tfrac{20}{3}$};
+
+    \filldraw[black] ({40/3}, 0) circle (2pt)
+    node[below] {$\tfrac{40}{3}$};
+
+    % Labels for segments
+    \node at (3,4.2) {$x_2=\dfrac{20-x_1}{3}$};
+    \node at (9,1.7) {$x_2=\dfrac{10}{3}-x_1$};
+    \end{tikzpicture}
+    \end{center}
+\end{frame}
