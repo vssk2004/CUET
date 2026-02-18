@@ -1,0 +1,113 @@
+\section{Marginal Rate of Substitution (MRS)}
+
+
+\subsection{Marginal Utility}
+
+\slide{Marginal Utility and MRS}{
+    Consider a consumer who is consuming some bundle of goods, \((x,y)\).
+    
+    How does this consumer's utility change as we give him/her a little more
+    of good \(x\) (while holding consumption of good \(y\) constant)?
+
+    This rate of change is called the marginal utility with respect to good \(x\).
+    \[MU_x = \frac{\Delta U}{\Delta x} = \frac{u(x + \Delta x, y) - u(x, y)}{\Delta x}\]
+    It measures the rate of change in utility (\(\Delta u\)) associated with a small
+    change in the amount of good \(x\) (\(\Delta x\)).
+
+    To calculate the change in utility associated with a small change in consumption of good \(x\):
+    \[\Delta U = MU_x \Delta x\]
+}
+
+\slide{Marginal Utility and MRS}{
+    The marginal utility with respect to good \(y\) is:
+    \[MU_y = \frac{\Delta U}{\Delta y} = \frac{u(x, y + \Delta y) - u(x, y)}{\Delta y}\]
+    It measures the rate of change in utility (\(\Delta u\)) associated with a small
+    change in the amount of good \(y\) (\(\Delta y\)).
+
+    To calculate the change in utility associated with a small change in consumption of good \(y\):
+    \[\Delta U = MU_y \Delta y\]
+}
+
+
+\slide{Marginal Utility and MRS}{
+    We have two different concepts:
+    \begin{enumerate}
+        \item Marginal Rate of Substitution: slope of an indifference curve.
+        \item Marginal Utility: rate of change of utility given a small change in the consumption of a good.
+    \end{enumerate}
+
+    Now, we bring them together.
+}
+
+
+\slide{Marginal Utility and MRS}{
+    Consider a change in the consumption of each good, \(\Delta x\) and \(\Delta y\), that
+    keeps utility constant --- a change in consumption that moves us along the indiﬀerence curve.
+    Then, we must have:
+    \[\Delta U = 0\]
+    Here, we need to consider the change in utility due to a change in the amount of good \(x\)
+    and a change in the amount of good \(y\):
+    \[\Delta U = MU_x \Delta x + MU_y \Delta y = 0\]
+    \[\text{MRS} = \frac{\Delta y}{\Delta x} = -\frac{MU_x}{MU_y}\]
+}
+
+
+\subsection{Calculus}
+
+\slide{Marginal Utility and MRS}{
+    Given a particular bundle, a consumer's MRS is equal to the slope of the tangent line
+    to the level set of their utility function at that bundle.
+
+    Suppose I have the utility function \(U(x, y)\) where \(x\) is cookies and \(y\) is coffee.
+    The additional utility I experience from consuming one more unit of a good is my
+    \textbf{marginal utility} for that good.
+    Mathematically:
+    \[MU_x = \pdv{U}{x}\]
+    \[MU_y = \pdv{U}{y}\]
+}
+
+\slide{Marginal Utility and MRS}{
+    So far, we have the utility function \(U(x, y)\) and the marginal utilities:
+    \[MU_x = \pdv{U}{x} \quad \text{and} \quad MU_y = \pdv{U}{y}\]
+    We can now take the total derivative of the utility function:
+    \[dU = \left(\pdv{U}{x}\right)dx + \left(\pdv{U}{y}\right)dy\]
+    We can rewrite this using the marginal utilities:
+    \[dU = (MU_x) dx + (MU_y) dy\]
+    If we want to stay on the same indifference curve, we need \(dU = 0\):
+    \[(MU_x) dx + (MU_y) dy = 0\]
+}
+
+
+\slide{Marginal Utility and MRS}{
+    From \(dU = 0\), we have:
+    \[-\odv{y}{x} = \frac{MU_x}{MU_y}\]
+
+    We also know that:
+    \[MRS = \odv{y}{x}\]
+
+    Therefore:
+    \[MRS = \odv{y}{x} = - \frac{MU_x}{MU_y}\]
+}
+
+
+\subsection{MRS of Cobb-Douglas}
+
+\slide{MRS and Cobb-Douglas Utility Function}{
+    The Cobb-Douglas utility function has the form:
+    \[u(x, y) = x^a y^b\]
+
+    The marginal utilities, then, are:
+    \[MU_x = \pdv{U}{x} = ax^{a-1}y^b \quad \text{and} \quad MU_y = \pdv{U}{y} = bx^ay^{b-1}\]
+
+    The MRS, then, is:
+    \[MRS = - \frac{MU_x}{MU_y} \quad \Rightarrow \quad MRS = - \frac{ay}{bx}\]
+}
+
+
+\slide{Monotonic Transformation and MRS}{
+    Consider a monotonic transformation of the Cobb-Douglas utility function
+    with the natural logarithm:
+    \[u(x, y) = a \ln(x) + b \ln(y)\]
+    \[MU_x = \pdv{U}{x} = \frac{a}{x} \quad \text{and} \quad MU_y = \pdv{U}{y} = \frac{b}{y}\]
+    \[MRS = - \frac{MU_x}{MU_y} = - \frac{ay}{bx}\]
+}
