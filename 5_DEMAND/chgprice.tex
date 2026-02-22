@@ -1,0 +1,111 @@
+\section{Ordinary and Giffen Goods}
+
+
+\subsection{Definitions}
+
+\slide{Ordinary and Giffen Goods}{
+    \dfn{A good \(x\) is \textbf{ordinary} if the consumer's demand for that good falls when the price of that good increases.}
+    \dfn{A good \(x\) is \textbf{Giffen} if the consumer's demand for that good rises when the price of that good increases.}
+}
+
+
+\slide{Mathematical Definition}{
+    ``A good \(x\) is \textbf{ordinary} if the consumer's demand for that good falls when the price of that good increases.''
+    This means that the first derivative of the demand for good \(x\) w.r.t its price
+    is negative.
+
+    \[
+    \pdv{x(p_x, p_y, m)}{p_x} < 0
+    \]
+
+    ``A good \(x\) is \textbf{Giffen} if the consumer's demand for that good rises when the price of that good increases.''
+    This means that the first derivative of the demand for good \(x\) w.r.t its price
+    is positive.
+
+    \[
+    \pdv{x(p_x, p_y, m)}{p_x} > 0
+    \]
+}
+
+
+\subsection{Substitutes and Complements}
+
+\slide{Price of the Other Good}{
+    The price of the other good \(p_y\) can also affect the demand for good \(x\).
+    Mathematically, two goods \(x\) and \(y\) are substitutes if:
+
+    \[
+    \pdv{x(p_x, p_y, m)}{p_y} > 0.
+    \]
+
+    The consumer desires more of good \(x\) when the price of good \(y\) increases.
+
+    Two goods \(x\) and \(y\) are complements if:
+
+    \[
+    \pdv{x(p_x, p_y, m)}{p_y} < 0.
+    \]
+
+    The consumer desires less of good \(x\) when the price of good \(y\) increases.
+}
+
+
+\subsection{Demand with Different Utility Functions}
+
+\slide{Cobb-Douglas and Change in Price}{
+    \[x(p_x, p_y, m) = \frac{a}{a+b} \frac{m}{p_x}\]
+    \[y(p_x, p_y, m) = \frac{b}{a+b} \frac{m}{p_y}\]
+
+    Here, we have:
+    \[
+    \pdv{x(p_x, p_y, m)}{p_x} = -\frac{a}{a+b} \frac{m}{p_x^2} < 0
+    \]
+    \[
+    \pdv{y(p_x, p_y, m)}{p_y} = -\frac{b}{a+b} \frac{m}{p_y^2} < 0
+    \]
+
+    So, both goods are ordinary.
+}
+
+\slide{Cobb-Douglas and Change in Price of Other Good}{
+    \[x(p_x, p_y, m) = \frac{a}{a+b} \frac{m}{p_x}\]
+    \[y(p_x, p_y, m) = \frac{b}{a+b} \frac{m}{p_y}\]
+
+    Here, we have:
+    \[
+    \pdv{x(p_x, p_y, m)}{p_y} = 0
+    \]
+    \[
+    \pdv{y(p_x, p_y, m)}{p_x} = 0
+    \]
+
+    So, the goods are neither substitutes nor complements.
+}
+
+
+\slide{Perfect Substitutes and Change in Price}{
+    \[x = \begin{cases}
+        \frac{m}{p_x} \quad \quad \ \text{when} \quad p_x < p_y \\
+        [0,\frac{m}{p_x}] \quad \text{when} \quad p_x = p_y \\
+        0 \quad \quad \quad \text{when} \quad p_x = p_y.
+    \end{cases}\]
+
+    If the price of good \(x\) increases, we have \(\frac{m}{\uparrow p_x}\). Therefore, \(x \downarrow\).
+
+    If the price of good \(y\) increases, we have \(\frac{m}{\uparrow p_y}\). Therefore, \(y \downarrow\).
+
+    Therefore, both goods are ordinary and they are substitutes.
+}
+
+
+\slide{Perfect Complements and Change in Price}{
+    \[
+    x(p_x, p_y, m) = y(p_x, p_y, m) = \frac{m}{p_x + p_y}
+    \]
+
+    If the price of good \(x\) increases, we have \(\frac{m}{\uparrow p_x + p_y}\). Therefore, \(x \downarrow\) and \(y \downarrow\).
+
+    If the price of good \(y\) increases, we have \(\frac{m}{p_x + \uparrow p_y}\). Therefore, \(x \downarrow\) and \(y \downarrow\).
+
+    Therefore, both goods are ordinary and they are complements.
+}

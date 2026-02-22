@@ -1,0 +1,101 @@
+\section{Demand}
+
+\slide{Consumer Demand}{
+    A consumer's optimal bundle depends on factors like income and prices.
+
+    The Marshallian demand function captures the optimal choice of quantity for
+    each good given the consumer's income \(m\) and the price of the two goods \(p_x\) and \(p_y\).
+    It is given by \(x(p_x, p_y, m)\) and \(y(p_x, p_y, m)\).
+
+    We know that the demand for a good is a function of the prices and income. Now,
+    we want to know what happens to demand when prices change or income changes.
+
+    Normal and inferior goods capture change in demand given a change in income.
+    Ordinary and giffen goods capture change in demand given a change in prices.
+}
+
+
+\section{Normal and Inferior Goods}
+
+
+\subsection{Definitions}
+
+\slide{Normal and Inferior Goods}{
+    \dfn{A good \(x\) is \textbf{normal} if the consumer's demand for that good rises when income increases.}
+    \dfn{A good \(x\) is \textbf{inferior} if the consumer's demand for that good falls when income increases.}
+}
+
+
+\slide{Mathematical Definition}{
+    ``A good \(x\) is \textbf{normal} if the consumer's demand for that good rises when income increases.''
+    This means that the first derivative of the demand for good \(x\) with respect to (w.r.t) income
+    is positive.
+
+    \[
+    \pdv{x(p_x, p_y, m)}{m} > 0
+    \]
+
+    ``A good \(x\) is \textbf{inferior} if the consumer's demand for that good falls when income increases.''
+    This means that the first derivative of the demand for good \(x\) with respect to (w.r.t) income
+    is negative.
+
+    \[
+    \pdv{x(p_x, p_y, m)}{m} < 0
+    \]
+}
+
+
+\subsection{Normal and Inferior Goods}
+
+\slide{Both Goods are Normal}{
+    An increase in income when both goods are normal will cause the consumer's demand to rise for both goods.
+    \begin{center}
+        \includegraphics[scale=0.35]{NORMAL1}
+    \end{center}
+}
+
+\slide{Good \texorpdfstring{\(x_1\)}{} is Inferior}{
+    An increase in income when good \(x_1\) is inferior and good \(x_2\) is normal will cause the consumer's demand to fall for \(x_1\)
+    and rise for \(x_2\).    
+    \begin{center}
+        \includegraphics[scale=0.4]{NORMAL2}
+    \end{center}
+}
+
+
+\subsection{Demand with Different Utility Functions}
+
+\slide{Cobb-Douglas and Change in Income}{
+    The Marshallian demand given a Cobb-Douglas utility function is:
+    \[x(p_x, p_y, m) = \frac{a}{a+b} \frac{m}{p_x}\]
+    \[y(p_x, p_y, m) = \frac{b}{a+b} \frac{m}{p_y}\]
+
+    From the equations, it should be evident that as \(m\) rises, so must \(x\) and \(y\).
+
+    A consumer with preferences described by the Cobb-Douglas utility function regards
+    both goods as normal.
+}
+
+
+\slide{Perfect Substitutes and Change in Income}{
+    The Marshallian demand given the utility function \(u(x,y) = x + y\) is:
+    \[x = \begin{cases}
+        \frac{m}{p_x} \quad \quad \ \text{when} \quad p_x < p_y \\
+        [0,\frac{m}{p_x}] \quad \text{when} \quad p_x = p_y \\
+        0 \quad \quad \quad \text{when} \quad p_x = p_y.
+    \end{cases}\]
+
+    When income increases, we have \(\frac{\uparrow m}{p_x}\). Therefore, \(x \uparrow\).
+
+    A consumer with preferences described by the Perfect Substitutes utility function regards both goods as normal.
+}
+
+
+\slide{Perfect Complements and Change in Income}{
+    The Marshallian demand given the utility function \(u(x,y) = \min\{x,y\}\) is:
+    \[x(p_x, p_y, m) = y(p_x, p_y, m) = \frac{m}{p_x + p_y}\]
+
+    When income increases, we have \(\frac{\uparrow m}{p_x + p_y}\). Therefore, \(x \uparrow\) and \(y \uparrow\).
+
+    A consumer with preferences described by the Perfect Complements utility function regards both goods as normal.
+}
